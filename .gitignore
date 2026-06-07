@@ -1,0 +1,24 @@
+# Ignore raw data
+Urban_planning_data/
+urban_planning_data.zip
+
+# Ignore large / unnecessary files
+*.zip
+*.docx
+
+# Python
+__pycache__/
+*.pyc
+
+# Outputs
+results/
+cache/
+
+# Models
+*.pt
+*.pth
+*.npy
+
+# IDE
+.vscode/
+.env

@@ -1,0 +1,92 @@
+Act as a senior researcher in urban AI and environmental planning.
+
+I am working on a project: "Reinforcement Learning (RL) for Optimizing Urban Green Space Placement to reduce Urban Heat Island (UHI) and improve air quality."
+
+Do a structured literature review with the following constraints:
+
+1. Focus ONLY on high-quality sources:
+   - Peer-reviewed journals (Elsevier, Springer, IEEE, Nature, Science)
+   - Top conferences (NeurIPS, AAAI, IJCAI, KDD)
+   - Government or institutional reports (EPA, NASA, NJDEP)
+
+2. Cover these 4 categories separately:
+   A. RL in urban planning / spatial optimization
+   B. Green space impact on UHI and air quality
+   C. GIS + ML integration for environmental planning
+   D. Optimization approaches (non-RL baselines like GA, MILP, heuristics)
+
+3. For each paper, extract:
+   - Problem formulation
+   - Data used
+   - Model type
+   - Key results
+   - Limitations (be critical, not descriptive)
+
+4. Identify patterns:
+   - What problems RL is actually solving vs. what is claimed
+   - Common weaknesses (e.g., unrealistic simulations, lack of real data)
+   - Gaps in spatial realism or policy relevance
+
+5. Explicitly answer:
+   - Why RL is justified (or NOT justified) for this problem
+   - Where RL fails compared to simpler methods
+
+6. Output:
+   - Table comparing 10–15 key papers
+   - Bullet list of REAL research gaps (not generic statements)
+   - 2–3 strong novelty ideas specifically for New Jersey (NJ context)
+
+Do NOT give generic summaries. Be critical, comparative, and evidence-driven.
+
+
+
+
+Model Selection:
+
+Act as an expert in reinforcement learning and spatial optimization.
+
+I am designing a model for:
+"Optimal placement of urban green spaces in a city grid (e.g., Newark, NJ) to minimize temperature (UHI) and pollution exposure."
+
+System setup:
+- Grid-based environment (e.g., 100x100 cells)
+- State: [population density, existing green space, pollution level]
+- Action: place or not place green space
+- Reward: reduction in temperature + pollution penalty
+- Data: NJDEP land use, population density, environmental indicators
+
+Your task:
+
+1. Evaluate whether RL is actually appropriate:
+   - Compare RL vs:
+     a) Greedy optimization
+     b) Genetic Algorithms
+     c) Linear/Integer Programming
+   - Clearly state when RL is overkill
+
+2. Recommend the BEST model approach:
+   - If RL: choose between Q-learning, DQN, PPO
+   - If NOT RL: propose a better alternative
+
+3. If RL is selected:
+   - Define:
+     - State representation (be precise)
+     - Action space (discrete/continuous)
+     - Reward function (mathematically structured)
+     - Episode design
+   - Identify instability risks (e.g., sparse rewards)
+
+4. Address realism:
+   - How to incorporate GIS constraints (land availability, zoning)
+   - How to avoid unrealistic placements
+
+5. Provide final recommendation:
+   - “Best practical model for publication”
+   - “Best simple baseline to compare against”
+
+6. Output:
+   - Clear architecture diagram (textual)
+   - Step-by-step implementation plan in Python
+   - Pitfalls that would make the paper weak
+
+Be brutally honest. If RL is not justified, say it clearly and explain why.
